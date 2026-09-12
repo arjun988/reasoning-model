@@ -1,0 +1,18 @@
+# Tiny net for CPU overfit / unit tests. Not a leaderboard model.
+name: spark-debug
+hidden_size: 128
+num_heads: 4
+L_layers: 2
+H_cycles: 2
+L_cycles: 2
+expansion: 4.0
+seq_len: 900
+vocab_size: 12
+pos_encodings: rope
+mlp_t: false
+use_puzzle_emb: true
+puzzle_emb_len: 4
+halt_max_steps: 4
+halt_exploration_prob: 0.1
+forward_dtype: float32
+grid_size: 30

@@ -1,0 +1,19 @@
+# Phase 2: no learned halt, always 16 outer steps.
+name: spark-7-nohalt
+hidden_size: 512
+num_heads: 8
+L_layers: 2
+H_cycles: 3
+L_cycles: 6
+expansion: 4.0
+seq_len: 900
+vocab_size: 12
+pos_encodings: rope
+mlp_t: false
+use_puzzle_emb: true
+puzzle_emb_len: 16
+halt_max_steps: 16
+halt_exploration_prob: 0.0
+use_halt: false
+forward_dtype: bfloat16
+grid_size: 30

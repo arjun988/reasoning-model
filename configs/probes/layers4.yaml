@@ -1,0 +1,17 @@
+# Phase 2: 4 layers, keep inner compute similar (n=3). TRM says 2 layers generalize better.
+name: spark-7-layers4
+hidden_size: 512
+num_heads: 8
+L_layers: 4
+H_cycles: 3
+L_cycles: 3
+expansion: 4.0
+seq_len: 900
+vocab_size: 12
+pos_encodings: rope
+mlp_t: false
+use_puzzle_emb: true
+puzzle_emb_len: 16
+halt_max_steps: 16
+forward_dtype: bfloat16
+grid_size: 30

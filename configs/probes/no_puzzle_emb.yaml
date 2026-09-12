@@ -1,0 +1,17 @@
+# Phase 2: no per-puzzle identity embedding (harder few-shot, less "train on eval demos").
+name: spark-7-nopuzzle
+hidden_size: 512
+num_heads: 8
+L_layers: 2
+H_cycles: 3
+L_cycles: 6
+expansion: 4.0
+seq_len: 900
+vocab_size: 12
+pos_encodings: rope
+mlp_t: false
+use_puzzle_emb: false
+puzzle_emb_len: 0
+halt_max_steps: 16
+forward_dtype: bfloat16
+grid_size: 30

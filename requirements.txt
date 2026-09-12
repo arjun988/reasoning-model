@@ -1,0 +1,10 @@
+# Core Python deps. Install CUDA PyTorch first (see README), then:
+#   .venv\Scripts\python.exe -m pip install -r requirements.txt
+#
+# RTX 50-series (Blackwell / sm_120) needs cu128 or newer, not the default CPU wheel:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu128
+
+numpy>=1.26
+pyyaml>=6.0
+pillow>=10.0
+pytest>=8.0

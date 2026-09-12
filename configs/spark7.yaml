@@ -1,0 +1,19 @@
+# Phase 1 baseline: TRM-faithful ~7M core (attention, 2 layers).
+name: spark-7
+hidden_size: 512
+num_heads: 8
+L_layers: 2
+H_cycles: 3
+L_cycles: 6
+expansion: 4.0
+seq_len: 900
+vocab_size: 12
+pos_encodings: rope
+mlp_t: false
+use_puzzle_emb: true
+puzzle_emb_len: 16
+halt_max_steps: 16
+halt_exploration_prob: 0.1
+no_ACT_continue: true
+forward_dtype: bfloat16
+grid_size: 30

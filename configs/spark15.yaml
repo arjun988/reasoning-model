@@ -1,0 +1,19 @@
+# Top of the 7–15M band: wider 2-layer TRM (~14M core).
+name: spark-15
+hidden_size: 768
+num_heads: 12
+L_layers: 2
+H_cycles: 3
+L_cycles: 6
+expansion: 4.0
+seq_len: 900
+vocab_size: 12
+pos_encodings: rope
+mlp_t: false
+use_puzzle_emb: true
+puzzle_emb_len: 16
+halt_max_steps: 16
+halt_exploration_prob: 0.1
+no_ACT_continue: true
+forward_dtype: bfloat16
+grid_size: 30
